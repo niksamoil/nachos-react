@@ -55,9 +55,10 @@ function Winners() {
                         <div className="winners__body-table">
                             <Tabs items={TabsPanel} content={TabsInfo}/>
 
-                            <div className="winners__btn-wrap">
+                            {/* Moved into Tabs component */}
+                            {/* <div className="winners__btn-wrap">
                                 <button className="winners__btn">Показать ещё</button>
-                            </div>
+                            </div> */}
                             <div className="winners__btn-mobile-wrapper">
                                 <button className="winners__btn-mobile">
                                     <img src={update} alt="upd"/>
