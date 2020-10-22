@@ -1,0 +1,130 @@
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    padding:  0 48px;
+    align-items: center;
+
+    .navbar {
+        z-index: 30;
+        display: none;
+        position: fixed;
+        right: 16px;
+        @media screen and (max-width: 1139.98px){
+            display: block;
+        }
+
+    }
+
+    &__logo-link {
+        img {
+            &:last-child {
+                margin-left: 16px;
+            }
+        } 
+    }
+
+    // .header-menu__items
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        min-width: 441px;
+    }
+
+
+    // .header-menu__items
+
+    &__item {
+        list-style: none;
+        position: relative;
+
+
+        &:hover::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background:#FFFFFF;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 20px;
+            transition-duration: 0.3s;
+        }
+        
+    }
+
+    // .header-menu__link
+
+    &__link {
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: normal;
+        text-decoration: none;
+        
+    }
+
+    // .header-menu__login
+
+    &__login {
+        width: 192px;
+        height: 40px;
+        border-radius: 6px;
+        border: 2px solid #ffffff;
+        background-color: transparent;
+        color: #ffffff;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        cursor: pointer;
+        a {
+            display: block;
+            color: #ffffff;
+            
+            text-align: center;
+            text-decoration: none;
+        }
+
+        &:hover {
+            background: #F24E0C;
+            transition-duration: 0.3s;
+        }
+    }
+
+    &__login_hidden {
+
+        width: 192.5px;
+        height: 40px;
+    }
+}
+
+.fa, .fas {
+    color: #FFFFFF;
+}
+
+
+@media (max-width: 1139.98px) {
+    .header-menu__mobile-fire {
+        img:first-child {
+            position: absolute;
+            bottom: 0;
+            width: 170%;
+        }
+
+        img:nth-child(2) {
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            width: 170%;
+        }
+        img:nth-child(3) {
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            width: 170%;
+        }
+    }
+}

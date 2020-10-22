@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Bold.eot');
+    src: local('Lora Bold'), local('Lora-Bold'),
+        url('../fonts/Lora-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lora-Bold.woff') format('woff'),
+        url('../fonts/Lora-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    }
+    
+    @font-face {
+    font-family: 'Lora';
+    src: url('../fonts/Lora-Regular.eot');
+    src: local('Lora Regular'), local('Lora-Regular'),
+        url('../fonts/Lora-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lora-Regular.woff') format('woff'),
+        url('../fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Lora';
+        src: local('Lora Medium'), local('Lora-Medium'),
+            url('../fonts/Lora-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    // Fira Sans fonts
+    @font-face {
+        font-family: 'Fira Sans';
+        src: url('../fonts/FiraSans-Medium.eot');
+        src: local('Fira Sans Medium'), local('FiraSansMedium'),
+            url('../fonts/FiraSans-Medium.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/FiraSans-Medium.woff') format('woff'),
+            url('../fonts/FiraSans-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Fira Sans';
+        src: url('../fonts/FiraSans-Regular.eot');
+        src: local('Fira Sans'), local('FiraSans'),
+            url('../fonts/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/FiraSans-Regular.woff') format('woff'),
+            url('../fonts/FiraSans-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Fira Sans';
+        src: url('../fonts/FiraSans-SemiBold.ttf');
+        src: local('Fira Sans'), local('FiraSans'),
+            url('../fonts/FiraSans-SemiBold.otf') format('otf'),
+            url('../fonts/FiraSans-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    // Roboto fonts
+    
+    @font-face {
+        font-family: 'Roboto';
+        src: url('../fonts/Roboto-Medium.eot');
+        src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Medium.woff') format('woff'),
+        url('../fonts/Roboto-Medium.ttf') format('truetype');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Roboto';
+        src: url('../fonts/Roboto-Regular.eot');
+        src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+    }
