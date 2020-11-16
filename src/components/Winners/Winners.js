@@ -1,28 +1,24 @@
-import React, {useState} from 'react';
-import {TabsInfo} from '../Tabs/TabsInfo';
+import React from "react";
+import {TabsInfo} from "../Tabs/TabsInfo";
+
+import "./Winners.scss";
+import nachos from "../../images/winners/nachos.png";
+import nachosMini from "../../images/winners/mini-nachos.png";
+import update from "../../images/winners/mobile/update.svg";
+import Tabs from "../Tabs/Tabs";
+import {TabsPanel} from "../Tabs/TabsPanel";
+import Input from "../Input/Input";
 
 
-import './Winners.scss';
-import nachos from '../../images/winners/nachos.png';
-import nachosMini from '../../images/winners/mini-nachos.png';
-import update from '../../images/winners/mobile/update.svg';
-import search from '../../images/icons/Search.svg';
-import Tabs from '../Tabs/Tabs';
-import {TabsPanel} from '../Tabs/TabsPanel';
 
-// const items = [
-//     { title: 'London', content: 'London is the capital city of England.' },
-//     { title: 'Paris', content: 'Paris is the capital of France.' },
-//     { title: 'Tokyo', content: 'Tokyo is the capital of Japan.' },
-// ];
+// const items = [     { title: 'London', content: 'London is the capital city
+// of England.' },     { title: 'Paris', content: 'Paris is the capital of
+// France.' },     { title: 'Tokyo', content: 'Tokyo is the capital of Japan.'
+// }, ];
 
 function Winners() {
-    const [click, setClick] = useState(false);
-
-
-
-    const handleClick = () => setClick(!click);
-
+    // const [click, setClick] = useState(false); const handleClick = () =>
+    // setClick(!click);
 
     return (
         <div className="winners">
@@ -40,7 +36,7 @@ function Winners() {
                         </div>
                     </div>
                     <div className="winners__body">
-                        <div className="winners__body-search">
+                        {/* <div className="winners__body-search">
                             <div className="winners__body-wrapper">
                                 <input
                                     className="winners__body-input"
@@ -51,31 +47,25 @@ function Winners() {
                                     <img src={search} alt="search"/>
                                 </button>
                             </div>
-                        </div>
+                        </div> */}
+                        <Input/>
                         <div className="winners__body-table">
                             <Tabs items={TabsPanel} content={TabsInfo}/>
 
-                            {/* Moved into Tabs component */}
-                            {/* <div className="winners__btn-wrap">
-                                <button className="winners__btn">Показать ещё</button>
-                            </div> */}
                             <div className="winners__btn-mobile-wrapper">
                                 <button className="winners__btn-mobile">
                                     <img src={update} alt="upd"/>
                                 </button>
-                                <div className="winners__btn-mobile-text">
-                                    Ещё Победители
-                                </div>
+                                <div className="winners__btn-mobile-text">Ещё Победители</div>
                             </div>
                         </div>
                     </div>
                     <img className="winners__nachos-mini" src={nachosMini} alt="nachos"/>
                     <img className="winners__nachos" src={nachos} alt="nachos"/>
-                </div>          
+                </div>
             </div>
         </div>
     );
-
 }
 
 export default Winners;

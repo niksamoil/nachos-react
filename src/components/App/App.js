@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import './fonts/fonts.scss';
+import '../../fonts/fonts.scss';
 import './App.css';
-import Header from './components/Header/Header';
-import Winners from './components/Winners/Winners';
+import Header from '../Header/Header';
+import Winners from '../Winners/Winners';
 
 
 class App extends Component {

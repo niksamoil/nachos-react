@@ -43,46 +43,7 @@
         margin: 0 auto;
     }
 
-    // .winners__body-search
 
-    &__body-search {
-        width: 100%;
-        // position: relative;
-        display: flex;
-        justify-content: center;
-
-        .winners__body-wrapper {
-            position: relative;
-        }
-        .winners__body-input {
-            height: 40px;
-            width: 288px;
-            border-radius: 3px;
-            background: #FFFFFF;
-            border: 1px solid #989898;
-            padding-left: 16px;
-            &::placeholder {
-                font-size: 14px;
-                font-weight: 400;
-                line-height: 18px;
-            }
-        }
-        .winners__body-btn {
-            position: absolute;
-            right: 8px;
-            top: 8px;
-            outline: none;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
 
     // .winners__body-table
 
@@ -254,6 +215,7 @@
 
     .winners__list {
         display: flex;
+        
         &:first-child {
             display: none;
         }
